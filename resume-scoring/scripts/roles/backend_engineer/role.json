@@ -1,0 +1,28 @@
+{
+  "position_title": "Backend / systems engineer",
+  "categories": [
+    {"key": "production", "label": "Production systems experience", "max": 30},
+    {"key": "systems_design", "label": "Reliability, architecture, ops judgment", "max": 25},
+    {"key": "code_quality", "label": "Code quality and verifiable work", "max": 20},
+    {"key": "technical_skills", "label": "Languages, tooling, depth", "max": 15},
+    {"key": "communication", "label": "Written technical communication", "max": 10}
+  ],
+  "bonus_max": 15,
+  "min_final_score": -20,
+  "max_final_score": 115,
+  "criteria": "Score production impact over tutorial projects. A single complex production system beats many CRUD apps. Public OSS is a bonus, not a requirement — private enterprise work counts when described with concrete systems, scale, and failure modes. Do not punish missing GitHub. Links and repos that can be checked beat claims.",
+  "notes": "Outbound / engineer hire rubric. Ignore school name, GPA, city. Rank only. Do not auto-reject. Personal repos are not OSS.",
+  "high_bar": {
+    "production": "Named production systems, scale, and failure modes. Years in prod, not intern tutorials.",
+    "systems_design": "Reliability/architecture judgment: failover, backups, automation, cost, or incident handling.",
+    "code_quality": "Verifiable work: repo, PR, or internal system described well enough to check. Empty GitHub is a gap, not a fail.",
+    "technical_skills": "Languages and tooling shown in production bullets, not a dump.",
+    "communication": "Clear written technical communication in the resume itself."
+  },
+  "pass_moves": [
+    "One production system bullet with scale + failure mode",
+    "Fill GitHub or portfolio with 1-2 real automations, or omit both",
+    "Keep early ops career visible under later leadership titles",
+    "Do not hide work behind VP/strategy language if applying as an engineer"
+  ]
+}

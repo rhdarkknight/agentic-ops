@@ -1,0 +1,29 @@
+{
+  "position_title": "MSP technician / service desk (Safeguard Networks)",
+  "categories": [
+    {"key": "systems_ops", "label": "Windows, Hyper-V, networking, RMM", "max": 30},
+    {"key": "troubleshooting", "label": "Ticket RCA and client communication", "max": 25},
+    {"key": "automation", "label": "PowerShell, scripting, repeatable ops", "max": 20},
+    {"key": "production_experience", "label": "Real MSP / IT production work", "max": 15},
+    {"key": "technical_breadth", "label": "Adjacent skills (cloud, backup, security)", "max": 10}
+  ],
+  "bonus_max": 15,
+  "min_final_score": -20,
+  "max_final_score": 115,
+  "criteria": "Score demonstrated ops skill only. High systems_ops: Hyper-V, RMM (Breeze/Datto/ConnectWise/Ninja), firewalls, DNS, backup restore proof. High troubleshooting: ticket examples with RCA, not 'good with people'. High automation: scripts that survived production, not a lab hello-world. Personal GitHub repos are not OSS. Certs without evidence of use are weak.",
+  "notes": "Primary inbound rubric for Safeguard hires. Ignore school name, GPA, city. Rank only. Do not auto-reject.",
+  "high_bar": {
+    "systems_ops": "Named hypervisor + RMM + firewall/DNS with production years. Backup restore proof beats a cert list.",
+    "troubleshooting": "One real ticket RCA with symptom, cause, fix, and customer impact. PSA/RMM ticket ID or equivalent.",
+    "automation": "One production script (PowerShell preferred) with runtime, endpoint count, or hours saved.",
+    "production_experience": "MSP or internal IT production, not a lab or class. Years and stack named.",
+    "technical_breadth": "Cloud or backup or security used on real clients, not listed as a skill only."
+  },
+  "pass_moves": [
+    "Put Hyper-V/RMM/firewall in experience bullets with numbers, not a skills dump",
+    "One ransomware/backup restore or P2V/failover RCA with outcome",
+    "One production script with runtime or endpoint count",
+    "Named PSA (ConnectWise) and ticket/work proof",
+    "Skip GitHub unless it is real OSS; empty GitHub is better than tutorial repos"
+  ]
+}

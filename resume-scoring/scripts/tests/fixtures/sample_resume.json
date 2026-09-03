@@ -1,0 +1,14 @@
+{
+  "title": "MSP technician",
+  "summary": "Hands-on MSP tech.",
+  "github": "https://github.com/octocat",
+  "technical_skills": ["Hyper-V", "PowerShell"],
+  "experience": [
+    {
+      "title": "Technician",
+      "company": "Example MSP",
+      "dates": "2020-2024",
+      "highlights": ["Restored 2TB backup after ransomware", "PowerShell inventory on 40 endpoints"]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "position_title": "Software Intern position at HackerRank",
+  "categories": [
+    {"key": "open_source", "label": "Open Source", "max": 35},
+    {"key": "self_projects", "label": "Self Projects", "max": 30},
+    {"key": "production", "label": "Production Experience", "max": 25},
+    {"key": "technical_skills", "label": "Technical Skills", "max": 10}
+  ],
+  "bonus_max": 20,
+  "min_final_score": -20,
+  "max_final_score": 120,
+  "criteria": "Public HackerRank intern rubric (interviewstreet/hiring-agent). OSS means contributions to OTHER people's projects; personal repos score ≤10 open_source. Tutorial apps (todo, weather, calculator, basic CRUD) are low self_projects. Hacktoberfest alone is 3-5 open_source max. Bonus: GSoC +5, founder/early engineer +3-5, portfolio URL +2, LinkedIn +1. Deduct for missing project links and tutorial-only portfolios.",
+  "notes": "Use for reverse-ATS against the public intern rubric. Not the default for MSP hires. Rank only. Do not auto-reject."
+}
