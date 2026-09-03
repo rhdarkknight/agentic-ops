@@ -1,0 +1,16 @@
+name: self-review-mode
+version: 0.1.0
+description: >-
+  Pre-emptive adversarial self-speculation (arXiv:2607.25816). Adds the
+  self_review and self_review_score tools, a mode-isolation marker, and an
+  opt-in pre_llm_call speculator suffix. Complements compounding-loops and the
+  adversarial-work-review skill; does not gate exits or own convergence.
+author: Hermes Agent
+kind: standalone
+provides_tools:
+  - self_review
+  - self_review_score
+hooks:
+  - pre_llm_call
+provides_hooks:
+  - pre_llm_call

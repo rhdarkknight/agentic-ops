@@ -1,0 +1,15 @@
+name: compositional_skill_router
+version: 0.1.0
+description: "Compositional skill routing — Decompose, Retrieve, Compose (SkillWeaver-style). Decomposes complex queries into atomic sub-tasks, retrieves top-k skills per sub-task from the SRA embedding cache, and assembles an ordered DAG with dependency detection. Implements SAD (Skill-Aware Decomposition) iterative refinement. Reuses ~/.hermes/sra_cache/skill_embeddings.npy."
+author: template2
+kind: standalone
+provides_tools:
+  - skill_route_compositional
+  - skill_route_eval
+  - skill_route_cache_stats
+provides_hooks:
+  - on_session_start
+  - on_session_end
+references:
+  - paper: arXiv:2606.18051 (SkillWeaver, Alibaba, June 2026)
+  - reuses: ~/.hermes/sra_cache (built by sra_skill_router plugin)

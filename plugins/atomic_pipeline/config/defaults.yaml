@@ -1,0 +1,91 @@
+# Atomic Pipeline — Default Configuration
+
+skills:
+  code_localization:
+    enabled: true
+    confidence_threshold: 0.5
+    max_files: 20
+    tool_allowlist:
+      - file_search
+      - read_file
+      - grep
+      - list_directory
+
+  code_editing:
+    enabled: true
+    run_tests: true
+    test_timeout_seconds: 60
+    tool_allowlist:
+      - read_file
+      - write_file
+      - patch_file
+      - execute_code
+      - terminal
+
+  unit_test_generation:
+    enabled: true
+    mutation_testing: true
+    num_mutants: 16
+    min_mutation_score: 0.5
+    tool_allowlist:
+      - read_file
+      - execute_code
+      - terminal
+      - write_file
+
+  issue_reproduction:
+    enabled: true
+    require_causal: true
+    timeout_seconds: 30
+    tool_allowlist:
+      - read_file
+      - execute_code
+      - terminal
+      - write_file
+
+  code_review:
+    enabled: true
+    min_confidence: 0.6
+    require_evidence: true
+    tool_allowlist:
+      - read_file
+      - grep
+      - execute_code
+
+classifier:
+  heuristic_threshold_high: 0.7
+  heuristic_threshold_low: 0.3
+  llm_fallback: true
+
+orchestrator:
+  auto_decompose: true
+  stop_on_failure: true
+  max_retries: 1
+
+rewards:
+  code_localization:
+    exact_match: 1.0
+    partial_match: 0.5
+    no_match: -1.0
+  code_editing:
+    tests_pass: 1.0
+    tests_fail: -1.0
+    regression: -2.0
+  unit_test_generation:
+    mutation_score_weight: 1.0
+    fail_on_correct: -1.0
+  issue_reproduction:
+    causal_valid: 1.0
+    partial_valid: 0.5
+    invalid: -1.0
+  code_review:
+    correct_judgment: 1.0
+    incorrect_judgment: -1.0
+
+# NOTE: model_routing was previously used to override the LLM model via
+# the pre_llm_call hook. That mechanism is not supported by the runtime
+# (only the ``context`` field is consumed). Per-skill model selection
+# should be done via the core ``model`` config or cron-job overrides.
+# The section is kept as a placeholder for future in-process routing
+# that does not depend on the hook.
+model_routing: {}

@@ -1,0 +1,8 @@
+name: coding-agent-discipline
+version: "1.0.0"
+description: "Wires the 10 cross-prompt coding-agent patterns (parallel-by-default, read-before-edit+recency, todo 1-in-progress, pre-deps-post-imports, tool-over-bash, plan-mode gate, linter-as-tool, no-edit-fail-tests, anti-inventory) into the Hermes agent loop via pre_tool_call, post_tool_call, and transform_tool_result hooks. Adds enter_plan_mode / exit_plan_mode tools."
+author: "Hermes Agent"
+hooks:
+  - pre_tool_call
+  - post_tool_call
+  - transform_tool_result

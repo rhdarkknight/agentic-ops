@@ -1,0 +1,28 @@
+name: atomic_pipeline
+version: 1.0.2
+description: "Atomic Task Decomposition Pipeline — 5 atomic coding skills with joint RL-style scoring"
+author: "Hermes Agent Team"
+provides_tools:
+  - atomic_code_localize
+  - atomic_code_edit
+  - atomic_unit_test_gen
+  - atomic_issue_reproduce
+  - atomic_code_review
+provides_hooks:
+  - pre_llm_call
+  - post_tool_call
+  - on_session_start
+  - on_session_reset
+  - on_session_finalize
+requires_env:
+  - HERMES_ATOMIC_ENABLED
+environment_vars:
+  - name: HERMES_ATOMIC_ENABLED
+    description: "Enable atomic pipeline (default: 1)"
+    default: "1"
+  - name: HERMES_ATOMIC_AUTO_DECOMPOSE
+    description: "Auto-decompose composite coding requests (default: 1)"
+    default: "1"
+  - name: HERMES_ATOMIC_SANDBOX
+    description: "Sandbox mode for test execution (default: docker)"
+    default: "docker"

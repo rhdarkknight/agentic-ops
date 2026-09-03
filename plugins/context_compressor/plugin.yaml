@@ -1,0 +1,18 @@
+name: context_compressor_enhancements
+version: 2.1.0
+description: "Complete context compressor enhancement suite: Task State, Summary Versioning, Hierarchical Memory (LTM), Salience Scoring, Structural Preservation. All enhancements use valid hooks (pre_llm_call, post_llm_call, on_session_start, on_session_end) — no core modifications required. Quality Guardrails removed in 2.1.0 (superseded by validated-compaction plugin)."
+provides_hooks:
+  - on_session_start
+  - on_session_end
+  - pre_llm_call
+  - post_llm_call
+environment_vars:
+  - name: HERMES_CC_ENHANCEMENTS_ENABLED
+    description: "Set to 0 to disable all context compressor enhancements (default: 1)"
+    default: "1"
+  - name: HERMES_CC_LTM_REFRESH_INTERVAL
+    description: "Refresh long-term memory every N compressions (default: 4)"
+    default: "4"
+  - name: HERMES_CC_TASK_STATE_FILE
+    description: "Path to task state persistence file (default: ~/.hermes/task_state.json)"
+    default: "~/.hermes/task_state.json"

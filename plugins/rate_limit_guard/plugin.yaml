@@ -1,0 +1,29 @@
+name: rate_limit_guard
+version: 1.0.0
+description: "Rate limit mitigation for primary model — caching, queuing, exponential backoff, fallback routing"
+provides_hooks:
+  - pre_api_request
+  - post_api_request
+  - on_session_start
+environment_vars:
+  - name: HERMES_RATE_LIMIT_GUARD_ENABLED
+    description: "Toggle plugin on/off"
+    default: "1"
+  - name: HERMES_RATE_LIMIT_GUARD_CACHE_TTL
+    description: "Cache TTL in seconds for repeated prompts"
+    default: "3600"
+  - name: HERMES_RATE_LIMIT_GUARD_FALLBACK_MODEL
+    description: "Fallback model when primary is rate-limited"
+    default: "qwen/qwen3.6-plus"
+  - name: HERMES_RATE_LIMIT_GUARD_MAX_QUEUE_SIZE
+    description: "Max pending requests in queue"
+    default: "50"
+  - name: HERMES_RATE_LIMIT_GUARD_BACKOFF_BASE
+    description: "Base delay in seconds for exponential backoff"
+    default: "3"
+  - name: HERMES_RATE_LIMIT_GUARD_BACKOFF_MAX
+    description: "Max backoff delay in seconds"
+    default: "60"
+  - name: HERMES_RATE_LIMIT_GUARD_RETRY_ATTEMPTS
+    description: "Max retry attempts before fallback"
+    default: "3"
