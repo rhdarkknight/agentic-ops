@@ -66,3 +66,10 @@
 - **Correct:** `uv run --with pymupdf python3 scripts/extract_resume.py`. Until then, do not fully trust PDF keywords
 - **Reason:** Default python has no PyMuPDF; pdftotext includes invisible text
 - **Date:** 2026-09-02
+
+### Public push without secret scan
+- **Trigger:** `git push` to GitHub (rhdarkknight or any public remote)
+- **Wrong:** Push because a quick regex last week was clean
+- **Correct:** `python3 scripts/scan_secrets.py --root <repo>` exit 0, then push. Pre-push hook must be on (`git config core.hooksPath .githooks`)
+- **Reason:** User standing rule: leak of keys/private data is worse than a late portfolio
+- **Date:** 2026-09-03

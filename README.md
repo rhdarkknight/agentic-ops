@@ -29,6 +29,15 @@ These are in daily use. They stay private until they are sanitized and split out
 
 No credentials, client data, or internal IPs in this repo.
 
+## Secret scan (mandatory before push)
+
+```bash
+python3 scripts/scan_secrets.py --root .
+git config core.hooksPath .githooks   # once per clone
+```
+
+Exit 0 required. The pre-push hook refuses otherwise. Scanner prints rule names, not secret values.
+
 ## License
 
 MIT
