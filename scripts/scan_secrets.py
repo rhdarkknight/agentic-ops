@@ -32,6 +32,7 @@ RULES: list[tuple[str, re.Pattern[str], re.Pattern[str] | None]] = [
 ]
 
 SKIP_PATH = re.compile(r"(^|/)(\.git/|__pycache__/|\.pytest_cache/)")
+SKIP_FILE = re.compile(r"(^|/)scan_secrets\.py$")
 TEXT_EXT = {".py", ".md", ".json", ".txt", ".yml", ".yaml", ".toml", ".cfg", ".ini", ".sh", ".env", ".sample", ""}
 
 
@@ -64,7 +65,7 @@ def main() -> int:
     hits: list[tuple[str, int, str]] = []
     for path in git_files(root):
         rel = str(path.relative_to(root))
-        if SKIP_PATH.search(rel):
+        if SKIP_PATH.search(rel) or SKIP_FILE.search(rel):
             continue
         if path.suffix.lower() not in TEXT_EXT and path.name not in {".gitignore"}:
             # still scan small files without suffix
@@ -81,7 +82,7 @@ def main() -> int:
             "git", "-C", str(root), "grep", "-I", "-n",
             "-e", "github_pat_", "-e", "ghp_", "-e", "BEGIN PRIVATE",
             "-e", "Iamthenight", "-e", "248-881-0030", "-e", "192.168.",
-            "--", ".", ":!scripts/scan_secrets.py",
+            "--", ".", ":!scripts/scan_secrets.py", ":!**/scan_secrets.py",
         ],
         capture_output=True, text=True,
     )
