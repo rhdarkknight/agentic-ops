@@ -1,0 +1,7 @@
+name: hindsight-governance
+version: 1.0.0
+description: Hindsight memory governance — FORGET primitive + steward approval queue for new facts.
+enabled: true
+toolsets:
+  - memory
+entrypoint: __init__:register

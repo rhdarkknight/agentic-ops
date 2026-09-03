@@ -1,33 +1,24 @@
 # Agentic ops
 
-Daily-driver tooling for running agents in production, not demos.
+Original plugins and tooling built for daily production agent work.
 
-Built and used by [Ryan Smith](https://github.com/rhdarkknight) as VP of operations at an MSP: hiring, upgrades, memory, and verification loops.
+Not a fork dump. Not a resume-scoring demo.
 
-## resume-scoring
+## Flagship (source in this repo)
 
-Resume-to-score pipeline. Not a second agent.
+| Plugin | What it does |
+|---|---|
+| `compounding-loops` | Plan → build → adversarial review until two consecutive clean passes |
+| `hindsight-governance` | Forget + steward approval so deprecated memory cannot shadow replacements |
+| `self-router` | Session-model cascade; `/model` swap applies to subsystems |
+| `silent_build_enforcer` | Kill mid-build narration; send input gates + closeout only |
+| `caveman_enforcer` | Compress style, not meaning |
+| `health_monitor` | Agent/host health checks |
+| `harness-conductor` | Harness loop orchestration |
 
-- Extract PDF / Markdown / JSON (strips hidden PDF text when PyMuPDF is present)
-- Optional GitHub enrich (`Authorization: token`, never Bearer)
-- Role rubrics (`msp_technician` default, plus `backend_engineer` and the public HackerRank intern rubric)
-- Deterministic score caps
-- `--pass-guide` for reverse-ATS
+## Catalog
 
-```bash
-python3 resume-scoring/scripts/score_resume.py resume.json --pass-guide --no-github
-uv run --with pytest python -m pytest resume-scoring/scripts/tests/test_resume_scoring.py -q
-```
-
-## What else runs here (not in this tree yet)
-
-These are in daily use. They stay private until they are sanitized and split out:
-
-- **Hindsight governance** — forget + steward approval so deprecated memory cannot shadow replacements
-- **Compounding-loop review** — adversarial review, two consecutive clean passes before ship
-- **ACP / Hermes frontends** — same agent core from CLI, editor, and messaging
-
-No credentials, client data, or internal IPs in this repo.
+[CATALOG.md](./CATALOG.md) — original plugins not in upstream Hermes.
 
 ## Secret scan (mandatory before push)
 
@@ -36,7 +27,11 @@ python3 scripts/scan_secrets.py --root .
 git config core.hooksPath .githooks   # once per clone
 ```
 
-Exit 0 required. The pre-push hook refuses otherwise. Scanner prints rule names, not secret values.
+Exit 0 required. Pre-push hook refuses otherwise.
+
+## Also here
+
+`resume-scoring/` is a **port** of interviewstreet/hiring-agent capabilities (extract, enrich, rubric). Kept because we use it. It is not the original work.
 
 ## License
 

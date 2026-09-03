@@ -1,0 +1,29 @@
+name: compounding-loops
+version: 0.1.2
+description: >-
+  Enforce plan->build->test->audit loop discipline: after a non-trivial
+  build, the agent must run an adversarial review pass, fix findings, and
+  re-review until two consecutive clean passes are observed (capped at
+  HERMES_LOOPS_MAX_PASSES, default 3).
+author: Hermes Agent
+kind: standalone
+hooks:
+  - pre_exit_verify
+  - post_tool_batch_reflect
+  - pre_llm_call
+  - post_llm_call
+  - post_api_request
+  - transform_llm_output
+  - on_session_reset
+  - on_session_start
+  - on_session_finalize
+provides_hooks:
+  - pre_exit_verify
+  - post_tool_batch_reflect
+  - pre_llm_call
+  - post_llm_call
+  - post_api_request
+  - transform_llm_output
+  - on_session_reset
+  - on_session_start
+  - on_session_finalize

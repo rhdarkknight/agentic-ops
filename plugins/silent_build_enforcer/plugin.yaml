@@ -1,0 +1,11 @@
+name: silent_build_enforcer
+version: 0.3.0
+description: Suppress mid-build narration. Keep only user-input gates and closeout summaries. v0.3 strips [thinking] wrappers and tightens KEEP.
+author: Hermes User
+license: MIT
+
+requires: []
+
+# Optional: environment variables this plugin reads
+env_vars:
+  - HERMES_SILENT_BUILD

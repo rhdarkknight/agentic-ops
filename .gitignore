@@ -19,3 +19,6 @@ id_*
 *.token
 *_tokens.json
 auth.json
+.ruff_cache/
+.task-backups/
+.ruff_cache/

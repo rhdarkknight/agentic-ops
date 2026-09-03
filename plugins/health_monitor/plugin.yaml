@@ -1,0 +1,21 @@
+name: health_monitor
+version: 1.0.0
+description: "End-to-end health monitoring with heartbeat, self-test, and self-healing. Monitors gateway, cron, agent, and system health. Provides /health command and automated alerts."
+provides_hooks:
+  - on_session_start
+  - on_session_end
+  - pre_llm_call
+  - post_llm_call
+environment_vars:
+  - name: HERMES_HEALTH_ENABLED
+    description: "Enable health monitoring (default: 1)"
+    default: "1"
+  - name: HERMES_HEALTH_CHECK_INTERVAL
+    description: "Health check interval in seconds (default: 300)"
+    default: "300"
+  - name: HERMES_HEALTH_SELF_HEAL
+    description: "Enable self-healing actions (default: 1)"
+    default: "1"
+  - name: HERMES_HEALTH_ALERT_THRESHOLD
+    description: "Number of consecutive failures before alerting (default: 2)"
+    default: "2"

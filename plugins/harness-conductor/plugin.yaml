@@ -1,0 +1,25 @@
+name: harness-conductor
+version: 0.1.3
+description: "Bounded response-shape verification conductor. Preserves empty/unclosed-fence safeguards without tool-error reflection loops."
+author: NousResearch
+kind: standalone
+hooks:
+  - pre_exit_verify
+  - post_tool_batch_reflect
+  - post_api_request
+  - transform_llm_output
+  - post_tool_call
+  - on_session_reset
+  - on_session_finalize
+platforms:
+  - linux
+  - macos
+  - windows
+provides_hooks:
+  - pre_exit_verify
+  - post_tool_batch_reflect
+  - post_api_request
+  - transform_llm_output
+  - post_tool_call
+  - on_session_reset
+  - on_session_finalize

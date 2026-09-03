@@ -1,0 +1,13 @@
+name: self-router
+version: 0.1.0
+description: >-
+  Hermes delegating on its own initiative. A delegation-decision layer that
+  scores every task against Hermes's strengths vs specialist harnesses and,
+  when a specialist or stateless harness genuinely wins, recommends (then
+  optionally dispatches) to it. Includes anchoring mitigation (novelty flag,
+  counterfactual audit, clean-slate path). WS4 of the self-router plan.
+author: Hermes Agent
+provides_hooks:
+  - pre_tool_call
+# NOTE: the `hooks:` key is documentation only. Runtime wiring happens in
+# register(ctx) via ctx.register_hook("pre_tool_call", ...).

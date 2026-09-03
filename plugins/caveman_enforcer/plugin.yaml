@@ -1,0 +1,13 @@
+name: caveman_enforcer
+version: 1.0.1
+description: Inject output compression instructions via pre_llm_call hook
+author: Hermes User
+homepage: ""
+license: MIT
+
+# No external dependencies required
+requires: []
+
+# Optional: environment variables this plugin reads
+env_vars:
+  - HERMES_CAVEMAN_MODE

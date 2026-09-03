@@ -1,0 +1,190 @@
+# Original plugin catalog
+
+Plugins in `~/.hermes/plugins` that are **not** in upstream Hermes.
+This index is generated. Flagship source is under `plugins/`.
+
+- `.pytest_cache` — pytest cache directory #
+- `_shared` — (no README)
+- `ab-routing-evaluator` — version: 1.0.0
+- `academic-benchmarks` — version: 1.0.0
+- `active_task_buffer` — version: "2.0"
+- `adacom` — AdaCoM Context Engine
+- `adaptive-execution-depth` — version: "1.0.0"
+- `agent-eval-suite` — Hermes Agent Behavioral Regression Suite
+- `agent-templates` — Agent Templates Plugin
+- `agent_experience` — version: 1.0.0
+- `agentic-skills` — version: 1.1.0
+- `ast-tools` — version: 1.0.0
+- `atomic_pipeline` — version: 1.0.2
+- `atommem_enhancements` — AtomMem Enhancements — Hermes Plugin
+- `auto-trace-refine` — version: 0.1.0
+- `auto_context_intelligence` — version: 1.0.0
+- `autonomous-goals` — Autonomous recurring goals
+- `bland-ai` — description: Bland.ai API — AI voice calls, SMS, voice cloning, custom tools
+- `bumblebee_security` — Bumblebee Security Plugin
+- `cache_optimizer` — version: 1.0.0
+- `caveman_enforcer` — version: 1.0.1
+- `changelog` — version: "2.0.0"
+- `cloak_browser` — version: 1.0.0
+- `coding_agent_discipline` — version: "1.0.0"
+- `coevolution_guard` — version: 1.0.0
+- `collective-skill-evolution` — version: 1.0.0
+- `compaction_provider_sync` — version: 1.0.0
+- `compositional_skill_router` — version: 0.1.0
+- `compounding-loops` — compounding-loops
+- `config-overrides` — description: Enforce configuration overrides — survive upstream merges
+- `context_compressor` — version: 2.1.0
+- `cost-observability` — version: 1.0.0
+- `credential-pool-setup` — Credential Pool Setup for Rate Limit Resilience
+- `cron-enhancements` — description: Cron enhancements via session hooks — stuck-goal cleanup, TTL
+- `cron-memory-recall-preamble` — version: 0.1.0
+- `cron_daemon_hook` — version: "1.0.1"
+- `data_analysis` — version: 1.0.0
+- `dci-context` — version: "1.0.0"
+- `deep_research` — version: "2.0.0"
+- `deterministic-testing` — version: 1.0.0
+- `dojo_benchmark` — version: 1.1.0
+- `edge_tool_registry` — version: 1.0.0
+- `enhanced-extraction` — Enhanced Web Extraction Plugin
+- `enhanced_web_search` — version: "1.0.0"
+- `env_context` — version: 1.0.0
+- `episodic_memory` — version: 1.0.0
+- `eval_promotion` — version: 0.1.0
+- `event_driven_cron` — version: 1.0.0
+- `evolution_triggers` — version: 1.0.0
+- `experience-library` — version: 1.0.0
+- `file-watch-trigger` — version: 1.0.0
+- `file_tools_shim` — File Tools Shim Plugin
+- `fluxmem-feedback` — version: 1.0
+- `fluxmem-procedural` — version: 1.0
+- `fluxmem-reshape` — version: 1.0
+- `fluxmem_provider` — version: 0.1.0
+- `framework-adapter` — version: 1.0.0
+- `frontier` — Frontier Context Engine
+- `golden-dataset` — version: 1.0.0
+- `golden-principle-lints` — version: 1.0.0
+- `graph-execution` — version: "0.1.0"
+- `grounded_backfill` — version: 1.0.0
+- `harness-conductor` — version: 0.1.3
+- `health_monitor` — Health Monitor Plugin
+- `helix_watchdog` — version: 1.0.0
+- `hermes-async-delegate` — version: 0.1.0
+- `hermes-memory-tools` — version: 0.1.0
+- `hermes_shield` — version: 0.1.0
+- `hindsight-abstract-recall` — version: 0.1.0
+- `hindsight-confidence` — version: 0.1.0
+- `hindsight-contradiction` — version: 0.1.0
+- `hindsight-entity-graph` — version: 0.1.0
+- `hindsight-governance` — Hindsight Governance
+- `hindsight-hardening` — version: 0.1.0
+- `hindsight-memory-stack` — version: 0.1.0
+- `hindsight-recall-disk-cache` — version: 1.0.0
+- `hindsight_adapter` — version: 1.0.0
+- `hindsight_fixtures` — version: 1.0.0
+- `hindsight_memory` — version: 1.1.0
+- `hindsight_offload` — version: 1.0.0
+- `hook_bus` — version: 0.1.0
+- `hybrid-retrieval` — version: 1.0.0
+- `in-session-quality-scorer` — version: 1.0.0
+- `instinct_store` — version: 0.1.0
+- `intent_router` — version: 1.0.0
+- `intra-session-reflexion` — version: 1.0.0
+- `jit_context` — version: 1.0.0
+- `knowledge_base_tools` — version: 2.0.0
+- `knowrl-enhancements` — KnowRL Enhancements Plugin
+- `large-tool-response` — version: 1.0.0
+- `lightweight_embeddings` — version: 1.0.0
+- `lmcache_integration` — version: 1.0.0
+- `local_vision_node` — version: "3.0.0"
+- `loop-auditor` — version: 0.1.0
+- `mcp-discovery-metrics` — version: 0.1.0
+- `memory-eval` — version: 0.1.0
+- `memory-feedback` — version: 0.1.0
+- `memory-search-fusion` — version: '1.0.0'
+- `memory-wal-reference` — version: 0.1.0
+- `memory_dreaming` — version: 1.1.0
+- `memory_eval` — version: 0.1.0
+- `memory_fts5` — version: 1.0.0
+- `memory_hooks` — version: 1.0.0
+- `memory_lifecycle` — version: 1.0.0
+- `memory_search` — version: 1.0.0
+- `memory_ttl` — version: 1.0.0
+- `meta-agent-optimizer` — Meta-Agent Optimizer Plugin
+- `misevolution-guard` — version: 1.0.0
+- `model-providers-neuralwatt` — kind: model-provider
+- `model-routing-eval` — version: 1.0.0
+- `multi-agent-orchestration` — version: 1.0.0
+- `multi_threshold_compaction` — version: "2.0"
+- `n8n_supermemory` — version: 1.0.0
+- `openapi-tool-discovery` — version: 1.0.0
+- `orchestration` — Prefect Workflow Orchestration Plugin
+- `orchestration-enhancements` — description: Enhanced orchestration — decomposition gate via pre_llm_call, DQ via post_tool_call
+- `orchestrator-plugin` — description: "Task orchestration plugin for Hermes Agent. Phase 1-4: topology DSL generation, experience retrieval, reflection/verification, and RL reward signa
+- `parallel_self_improvement` — version: 1.0.0
+- `policy_profiles` — version: 0.1.0
+- `printing-press` — version: "1.0.0"
+- `programmatic-trace-memory` — version: 0.1.0
+- `prompt_enhancer` — version: "1.0"
+- `proposal_gate` — version: 0.1.0
+- `rate_limit_guard` — Rate Limit Guard Plugin
+- `reacquisition_metric` — version: 1.1.0
+- `recency` — version: 0.1.0
+- `recursive_mas` — recursive_mas Plugin
+- `rerank` — version: 1.0.0
+- `research_gate` — version: 0.1.0
+- `restartable-handoff` — version: 0.1.0
+- `retrieval_router` — Unified Retrieval Router Plugin
+- `reward-hacking-detector` — version: 1.0.0
+- `role-system` — version: 1.0.0
+- `rqgm` — RQGM — Red Queen Gödel Machine gap-closure plugin
+- `rtk_filter` — version: 1.0.0
+- `safe-session-update` — version: 0.1.0
+- `sandbox-mcp` — version: 1.0.0
+- `sc-preserve` — version: 1.0.0
+- `scoped-memory` — version: 0.1.0
+- `screen_capture` — description: Capture desktop screenshots via ffmpeg x11grab
+- `self-improvement-harness` — version: 1.0.0
+- `self-review-mode` — self-review-mode
+- `self-router` — version: 0.1.0
+- `session-memory-gatherer` — version: 0.1.0
+- `session-persistence` — version: 1.0.0
+- `session_search` — version: "1.0.0"
+- `shared-history-search` — version: "0.1.0"
+- `silent_build_enforcer` — version: 0.3.0
+- `skill-edit-credit` — version: 1.0.0
+- `skill-factory` — version: 1.0.0
+- `skill-matcher` — version: 1.0.0
+- `skill-security-scanner` — (no README)
+- `skill-soul-trap-verify` — version: 0.1.0
+- `skill_evolution` — version: 1.0.0
+- `skill_graph_routing` — Skill Graph Routing Plugin
+- `skill_versioning` — version: 1.0.0
+- `skills-recall` — version: 2.0.0
+- `skills_evolution` — version: 1.0.0
+- `social-behavior` — version: 0.2.0
+- `soulforge-adaptations` — soulforge-adaptations
+- `soulforge_delegate` — (no README)
+- `speculative-tool-calling` — Speculative Tool Calling (Hermes plugin)
+- `squilla_router` — version: 1.0.0
+- `sra_skill_router` — version: 1.0.0
+- `status_snapshot` — version: 0.1.0
+- `strategy_router` — version: 1.0.0
+- `structured_output` — description: Generate structured files (.docx, .xlsx, .pptx, .pdf, .csv, .html) from data
+- `subagent-cockpit` — version: "0.1.0"
+- `surrogate_verifier` — version: 1.0.0
+- `system_prompt_injector` — version: "1.0"
+- `temporal_memory` — version: 1.0.0
+- `test-weather-server` — version: 1.0.0
+- `tiered_memory` — version: 1.0.0
+- `token-compression` — version: 1.0.0
+- `tool-retry` — description: Add retry with exponential backoff to tool calls
+- `tool_description_enhancer` — version: "1.0"
+- `trace-replay-eval` — version: 1.0.0
+- `transcription` — (no README)
+- `unified-diff-viewer` — version: 1.0.0
+- `upgrade-backup` — version: 1.0
+- `validated-compaction` — version: 1.0.0
+- `verification_first` — version: 1.0.0
+- `watchdog-monitor` — version: 1.0.0
+
+Count: 183
