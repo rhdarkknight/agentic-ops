@@ -25,6 +25,16 @@ Not a fork dump. Not a resume-scoring demo.
 
 Categorized index: [CATALOG.md](./CATALOG.md)
 
+## Production use
+
+Daily driver for MSP operations. Not a demo repo.
+
+- Multi-node local inference. Discrete-GPU nodes, a Hyper-V host, a Docker host, a Mac file pipeline. No hostnames or IPs in this repo.
+- Cost routing: routine and confirmed tasks go to local small models. Cloud models stay on authoring and hard calls.
+- What shipped: the plugins above. Verification gate, memory forget/steward, model cascade, narration kill-switch.
+
+What broke is not on this page. Add a line only for a real incident.
+
 ## Secret scan (mandatory before push)
 
 ```bash
